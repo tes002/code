@@ -3,6 +3,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
+# return the n/2 th node when n is even
 class Solution(object):
   def middleNode(self, head):
     """
