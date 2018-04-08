@@ -15,7 +15,7 @@
 public class Solution {
   public ListNode partition(ListNode head, int target) {
     // Write your solution here
-    ListNode dummy1 = new ListNode(0);
+    ListNode dummy1 = new ListNode(0);  //dummy head for linked list with small value
     ListNode dummy2 = new ListNode(0);
     ListNode cur = head, cur1 = dummy1, cur2 = dummy2;
     while (cur != null) {
