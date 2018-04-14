@@ -1,4 +1,4 @@
-tags: Sorting
+
 
 public class Solution {
   public int[] solve(int[] array) {
