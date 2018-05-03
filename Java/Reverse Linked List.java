@@ -24,9 +24,16 @@ public class Solution {
     }
     return prev; // cur is null here
   }
+  
   public ListNode reverseRecursively(ListNode head) {
-  
-  
-  
+   // method2: recursion
+    if (head == null || head.next == null){
+    	return head;
+    }
+    ListNode cur = head;
+    ListNode newHead = reverse(head.next);
+    cur.next.next = cur;
+    cur.next = null;
+    return newHead;
   }
 }
