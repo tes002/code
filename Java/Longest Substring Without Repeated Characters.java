@@ -4,7 +4,7 @@ public class Solution {
   public int longest(String input) {
     // Write your solution here
     Set<Character> distinct = new HashSet<>();
-    int left = 0, right = 0, globalLongest = 0;
+    int left = 0, right = 0, globalLongest = 0; //there is a window between left and right; store the length of longest window ever.
     while (right < input.length()){
       char end = input.charAt(right);
     	if (distinct.contains(end)){
