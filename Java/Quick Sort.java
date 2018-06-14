@@ -19,7 +19,7 @@ public class Solution {
   private int partition (int[] array, int left, int right){ //
   	int pivotIndex = left + rand.nextInt(right - left + 1);
     int pivot = array[pivotIndex];
-    swap(array, pivot, right);
+    swap(array, pivotIndex, right);
     int leftBound = left;
     int rightBound = right - 1;
     while (leftBound <= rightBound){
