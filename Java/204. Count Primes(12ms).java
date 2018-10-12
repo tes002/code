@@ -7,7 +7,7 @@ class Solution {
         for (int i = 2; i < n; i++){
             isPrime[i] = true;
         }
-        for (int i = 2; i * i <= n; i++){
+        for (int i = 2; i * i <= n; i++){ //Math.sqrt() is expensive;
             if (isPrime[i] == true){
                 int j = i;
                 while (i * j < n){ //x = p^2 +jp; same as boundary i * i <= n;
